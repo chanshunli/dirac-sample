@@ -1,3 +1,14 @@
+# Usage
+
+```bash
+
+1. `./lein demo ` 
+2. open the http://localhost:9977 in canary ` /Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary   --remote-debugging-port=9222  --no-first-run   --user-data-dir=.test-dirac-chrome-profile ` 
+3. open canary dirac devtools 
+4. ` ./lein repl 
+
+```
+
 # dirac-sample [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](license.txt)
 
 This project is an example of integration of [**Dirac DevTools**](https://github.com/binaryage/dirac) into a
