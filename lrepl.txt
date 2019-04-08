@@ -1,0 +1,55 @@
+➜  dirac-sample git:(master) ✗ ./lein repl   
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+nREPL server started on port 8230 on host 127.0.0.1 - nrepl://127.0.0.1:8230
+REPL-y 0.4.3, nREPL 0.6.0
+Clojure 1.10.0
+Java HotSpot(TM) 64-Bit Server VM 1.8.0_121-b13
+
+Dirac Agent v1.3.5
+Connected to nREPL server at nrepl://localhost:8230.
+Agent is accepting connections at ws://localhost:8231.
+    Docs: (doc function-name-here)
+          (find-doc "part-of-name-here")
+  Source: (source function-name-here)
+ Javadoc: (javadoc java-object-or-class-here)
+    Exit: Control+D or (exit) or (quit)
+ Results: Stored in vars *1, *2, *3, an exception in *e
+
+user=> 
+
+user=> (dirac.
+dirac.agent                                  dirac.agent.config                           dirac.agent.impl                             
+dirac.agent.version                          dirac.lib.bencode-hell                       dirac.lib.nrepl-client                       
+dirac.lib.nrepl-protocols                    dirac.lib.nrepl-tunnel                       dirac.lib.nrepl-tunnel-server                
+dirac.lib.utils                              dirac.lib.version                            dirac.lib.weasel-server                      
+dirac.lib.ws-server                          dirac.nrepl                                  dirac.nrepl.bootstrap                        
+dirac.nrepl.compilers                        dirac.nrepl.config                           dirac.nrepl.config-helpers                   
+dirac.nrepl.controls                         dirac.nrepl.debug                            dirac.nrepl.driver                           
+dirac.nrepl.eval                             dirac.nrepl.figwheel                         dirac.nrepl.helpers                          
+dirac.nrepl.jobs                             dirac.nrepl.joining                          dirac.nrepl.messages                         
+dirac.nrepl.piggieback                       dirac.nrepl.protocol                         dirac.nrepl.requests                         
+dirac.nrepl.sessions                         dirac.nrepl.sniffer                          dirac.nrepl.special                          
+dirac.nrepl.state                            dirac.nrepl.transports.bencode-workarounds   dirac.nrepl.transports.debug-logging         
+dirac.nrepl.transports.errors-observing      dirac.nrepl.transports.job-observing         dirac.nrepl.transports.output-capturing      
+dirac.nrepl.transports.status-cutting        dirac.nrepl.transports.trace-printing        dirac.nrepl.usage                            
+dirac.nrepl.utils                            dirac.nrepl.version                          dirac.project                                
+user=> (dirac! :join 1)
+Specific target Dirac session will be determined dynamically according to current matching strategy.
+Your current nREPL session is a joined Dirac session (ClojureScript) which targets 'the Dirac session #1'
+which is currently forwarding commands to the Dirac session (ClojureScript) connected to 'binaryage/dirac-sample | http://localhost:9977/demo.html | Chrome/75.0.3759.0 | Mac/10.14.4 [3a4b0a3a]'
+with selected ClojureScript compiler nil (any available) which is currently matching compiler <dirac/3a4b0a3a.1>.
+To quit, type: :cljs/quit
+
+cljs.user=> (in-ns 'dirac-sample.demo)
+nil
+dirac-sample.demo=> 
+
+dirac-sample.demo=> abc
+11122
+dirac-sample.demo=> defg
+#object[cljs.core.Atom {:val #}]
+dirac-sample.demo=> 
+
+
