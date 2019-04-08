@@ -13,7 +13,7 @@
                  [binaryage/dirac ~dirac-version]
                  [figwheel ~figwheel-version]
                  ;; Copy from the jimw-clj-binding-games
-                 [ch.qos.logback/logback-classic "1.2.3"]
+                 ;;[ch.qos.logback/logback-classic "1.2.3"]
                  [cheshire "5.8.1"]
                  [cljs-ajax "0.8.0"]
                  [clojure.java-time "0.3.2"]
@@ -32,7 +32,7 @@
                  [metosin/ring-http-response "0.9.1"]
                  [mount "0.1.16"]
                  [org.clojure/tools.cli "0.4.2"]
-                 [org.clojure/tools.logging "0.4.1"]
+                 ;;[org.clojure/tools.logging "0.4.1"]
                  [org.postgresql/postgresql "42.2.5"]
                  [org.webjars.npm/bulma "0.7.4"]
                  [org.webjars.npm/material-icons "0.3.0"]
